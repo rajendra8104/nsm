@@ -1,0 +1,318 @@
+.banner {
+    width: 720px;
+}
+.card {
+    box-shadow: none !important;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0px;
+}
+.toolbar {
+    border-bottom: 2.5px solid rgba(0,0,0,.12);
+    background-color: white;  
+    margin-bottom: 0%;
+}
+
+.footer {
+    position: relative;
+    /* left: 0; */
+    bottom: 10px;
+    width: 100%;
+    /* background-color: red; */
+    background-color: white;
+    /* color: white; */
+    /* text-align: center; */
+    /* image-resolution: 10%; */
+    padding: 2px 1px;
+    border-top: 0px solid #ddd;
+    z-index: 100; 
+    /* Ensure it's on top of other content */
+  }
+
+/* Style for the logo inside the footer */
+.footer-logo {
+    /* right: 100%; */
+    /* left: 500%; */
+    max-width: 100px;  /* Set the maximum width for the logo */
+    /* height: auto;  */
+     /* Maintain the aspect ratio */
+}
+
+
+
+h5.card-title {
+    color: #0156D1;
+}
+.img {
+    display: flex;
+    height: 155px;
+    justify-content: center;
+}
+.card-img {
+    width: auto !important;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.twitter-timeline {
+    height: 500px !important;
+    overflow-y: scroll;
+}
+.sponsors_img {
+    width: 17em;
+}
+
+.img-text{
+    position:absolute;
+    bottom: 8px;
+    left: 23%;
+    color: #ffffff;
+}
+
+.img-container{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .sponsors_img {
+     margin-top: 0px !important;
+    }
+  }
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: none;
+    background-color: #f8f9fa;
+}
+/* Style for the indicator container */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: -50%;
+    list-style: none;
+}
+
+/* Style for each indicator dot */
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+/* Active state for the current indicator */
+.carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+ .row {
+    display: flex;
+  } 
+  
+  .column {
+     flex: 50%;
+  } 
+
+
+  /* {
+    box-sizing:  border-box;
+  } */
+  .column{
+    float: left;
+    padding: 1px;
+    min-height: 100px;
+  }
+
+  .left-side{
+    width: 35%;
+  }
+
+  .right-side{
+    width: 65%;
+
+  }
+
+  .both-rows:after{
+    content: "";
+    display: table;
+    clear:both;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+  /* Basic styling for the nav container */
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style for the nav list */
+.nav {
+    display: contents;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style for each nav item */
+.nav-item {
+    margin-right: 5px;
+}
+
+/* Basic link styling */
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on nav links */
+.nav-link:hover {
+    
+    background-color: #f7c3a0;
+    color: #000000;
+}
+
+/* Style for the active/selected nav link */
+.nav-item:active {
+    font-weight: bold;  /* Bold the selected tab */
+    color: #000;
+}
+
+/* Tab content styling */
+.tab-content .tab-panel {
+    display: none;
+}
+
+/* Show active tab content */
+.tab-content .tab-panel.active {
+   
+    display: block;
+    padding: 20px;
+    border: 1px solid #d01313;
+    background-color: #4166d5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 30px;
+    margin-top: 5px;
+
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 35px;
+    transition: all .3s;
+    border-radius: 50%;
+}
+
+
+
+nav span{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg,#4f1919,#ff3333);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+nav a:nth-child(1):hover~span
+{
+    left:0;
+}
+
+nav a:nth-child(2):hover~span
+{
+    left:95px;
+}
+
+.carousel-inner {
+    height: 430px; /* Set your desired height */
+}
+
+.carousel-item img {
+    height: 100%; /* Make images fill the height */
+    width: auto; /* Allow width to adjust */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 250px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 530px) {
+    .carousel-inner {
+        height:140px /* Adjust height for mobile devices */
+    }
+}
+
+.bottom_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ml-20 {
+    margin-left: 20%;
+}
